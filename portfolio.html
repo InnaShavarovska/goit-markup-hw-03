@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="site-nav">
           <a href="./index.html" class="nav-logo"><span class="logo-text">Web</span>Studio</a>
@@ -36,12 +36,12 @@
 
     <!-- основний контент -->
     <main>
-      <section class="projects">
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Проекти</h1>
           <ul>
             <li>
-              <button type="button" class="projects-button">Усі</button>
+              <button type="button" class="projects-button button-all">Усі</button>
             </li>
             <li>
               <button type="button" class="projects-button">Веб-сайти</button>
@@ -59,78 +59,124 @@
           <ul class="projects-list">
             <li>
               <a href=""
-                ><img src="./images/technokr.jpg" alt="Веб-сайт технокряк" width="370" />
-                <h2 class="projects-title">Технокряк</h2>
-                <p class="projects-text">Веб-сайт</p>
+                ><img
+                  class="projects-img"
+                  src="./images/technokr.jpg"
+                  alt="Веб-сайт технокряк"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Технокряк</h2>
+                  <p class="projects-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li>
               <a href=""
                 ><img
+                  class="projects-img"
                   src="./images/poster.jpg"
                   alt="Постер два баскетболісти з м'ячем"
                   width="370"
                 />
-                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                <p class="projects-text">Дизайн</p>
+                <div class="card-lower">
+                  <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="projects-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/restaurant.jpg" alt="Логотип ресторану Сіфуд" width="370" />
-                <h2 class="projects-title">Ресторан Seafood</h2>
-                <p class="projects-text">Додаток</p></a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/headphones.jpg" alt="Навушники чорного кольору" width="370" />
-                <h2 class="projects-title">Проєкт Prime</h2>
-                <p class="projects-text">Маркетинг</p></a
-              >
+                ><img
+                  class="projects-img"
+                  src="./images/restaurant.jpg"
+                  alt="Логотип ресторану Сіфуд"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Ресторан Seafood</h2>
+                  <p class="projects-text">Додаток</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href=""
                 ><img
+                  class="projects-img"
+                  src="./images/headphones.jpg"
+                  alt="Навушники чорного кольору"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Проєкт Prime</h2>
+                  <p class="projects-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  class="projects-img"
                   src="./images/boxes.jpg"
                   alt="Одна коробочка білого кольору друга коробочка тілесного кольору"
                   width="370"
                 />
-                <h2 class="projects-title">Проєкт Boxes</h2>
-                <p class="projects-text">Додаток</p></a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img src="./images/monitor.jpg" alt="Монітор комп'ютера" width="370" />
-                <h2 class="projects-title">Inspiration has no Borders</h2>
-                <p class="projects-text">Веб-сайт</p></a
-              >
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="./images/magazin.jpg"
-                  alt="Розгорнутий журнал Limited Edition"
-                  width="370"
-                />
-                <h2 class="projects-title">Видання Limited Edition</h2>
-                <p class="projects-text">Дизайн</p>
+                <div class="card-lower">
+                  <h2 class="projects-title">Проєкт Boxes</h2>
+                  <p class="projects-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/birka.jpg" alt="Бірка LAB" width="370" />
-                <h2 class="projects-title">Проєкт LAB</h2>
-                <p class="projects-text">Маркетинг</p></a
-              >
+                ><img
+                  class="projects-img"
+                  src="./images/monitor.jpg"
+                  alt="Монітор комп'ютера"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Inspiration has no Borders</h2>
+                  <p class="projects-text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li>
               <a href=""
-                ><img src="./images/notebook.jpg" alt="Робота людини за ноутбуком" width="370" />
-                <h2 class="projects-title">Growing Business</h2>
-                <p class="projects-text">Додаток</p></a
-              >
+                ><img
+                  class="projects-img"
+                  src="./images/magazin.jpg"
+                  alt="Розгорнутий журнал Limited Edition"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Видання Limited Edition</h2>
+                  <p class="projects-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img class="projects-img" src="./images/birka.jpg" alt="Бірка LAB" width="370" />
+                <div class="card-lower">
+                  <h2 class="projects-title">Проєкт LAB</h2>
+                  <p class="projects-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  class="projects-img"
+                  src="./images/notebook.jpg"
+                  alt="Робота людини за ноутбуком"
+                  width="370"
+                />
+                <div class="card-lower">
+                  <h2 class="projects-title">Growing Business</h2>
+                  <p class="projects-text">Додаток</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -154,7 +200,7 @@
             <li>
               <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a><br />
             </li>
-            <li><a href="tel:380961111111" class="footer-link">+38 096 111 11 11</a></li>
+            <li><a href="tel:380961111111" class="footer-link no-margin">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>

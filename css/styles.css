@@ -30,11 +30,43 @@ h1, h2, h3, p{
     padding: 0;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.no-padding {
+    padding-top: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /* Header */
 
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
+
 /* Лого */
 
 .nav-logo,
@@ -59,18 +91,30 @@ text-decoration: none;
 
 /* Nav */
 
+.list-nav{
+display: flex;
+}
+
+.list-nav li{    
+    margin-right: 50px;
+}
+
+.list-nav li:last-child{
+    margin-right: 0;
+}
+
 .list-contact a,
 .list-nav a{
     font-weight: 500;    
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none;   
 }
 .list-contact a{
     color: var(--text-color);
 }
 .list-nav a {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color);   
 }
 
 .list-nav a.current{
@@ -84,7 +128,18 @@ text-decoration: none;
     color: var(--blue-color);
 }
 
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.list-contact{
+    display: flex;
+}
 
+.list-contact li+li{
+    margin-left: 50px;
+}
 
 /* Cтилі html */
 
@@ -95,26 +150,32 @@ text-decoration: none;
     text-align: center;    
 }
 .hero-title {
+    margin-bottom: 30px;
+
     color: var(--white-color);
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
     letter-spacing: 0.06em;
-    text-transform: uppercase;    
+    text-transform: uppercase; 
+        
 }
 .hero-button {
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: transparent;
+    min-width: 216px;
+
     color: var(--white-color);
     background-color: #188CE8;
+
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.8;
-    display: inline-block;    
-    letter-spacing: 0.06em;
-    padding: 10px 32px;
-    border-radius: 4px; 
-    min-width: 216px;   
+    line-height: 1.8;    
+    letter-spacing: 0.06em;         
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -125,10 +186,13 @@ text-decoration: none;
 
 
 .advantages-title{
+margin-bottom: 10px;
+
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;    
-text-transform: uppercase;    
+text-transform: uppercase; 
+  
 }
 .advantages-text{
     line-height: 1.7;
@@ -140,10 +204,13 @@ text-transform: uppercase;
 
 .work-title,
 .team-title{
+text-align: center;
+margin-bottom: 50px;
+
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
-text-align: center;      
+    
 }
 
 .title-name,
@@ -152,43 +219,48 @@ font-size: 16px;
 line-height: 1.19;
 }
 .title-name {
-    font-weight: 500;
+margin-bottom: 10px;
+
+ font-weight: 500;    
 }
 
 .team-text{
-    color: var(--text-color);
+    padding-bottom: 30px;
+
+    color: var(--text-color);    
 }
 .team {
     background-color: #F5F4FA;     
 }
-
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.no-padding{
-    padding-top: 0;
+.team-img{
+    margin-bottom: 30px;
 }
 
 
 /* Footer */
 .footer{
-    background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+
+     background: #2F303A;   
 }
-/* ????????? */
-/* .footer-logo {
-    padding-bottom: 20px;
-} */
-/* .footer-link{
-    margin-botton 9 px} */
+
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 
 .footer-link{
-    color: rgba(255, 255, 255, 0.6);
+display: inline-block;
+margin-bottom: 9px;
+
+color: rgba(255, 255, 255, 0.6);
+
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
+      
 }
 .footer-color{
     color: var(--white-color);
@@ -198,67 +270,73 @@ line-height: 1.19;
     color: var(--blue-color);
 }
 
+.no-margin{
+    margin-bottom: 0px;
+}
+
  /* Стилі портфоліо */
 
 /* Кнопки портфоліо */
 
-.projects{
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
+
 .projects-button{
+    display: inline-block;
+     text-align: center;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: transparent;
+        
     color: var(--primary-text-color);  
     background-color: #F5F4FA;
+
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6; 
-    display: inline-block;
-    text-align: center;
-    padding: 6px 22px;
-    border-radius: 4px;
-    min-width: 130px;
+     
 }
 .projects-button:hover,
 .projects-button:focus{
     color: var(--white-color);
     background-color: var(--blue-color);
 }
+
+.button-all{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .projects-title{
+margin-bottom: 4px;
+
+color: var(--primary-text-color);
+
 font-weight: 700;
 font-size: 18px;
 line-height: 2; 
-letter-spacing: 0.06em;   
-color: var(--primary-text-color);
+letter-spacing: 0.06em; 
 }
+
 .projects-text{
+color: var(--text-color);
+
+text-decoration: none;
 font-size: 16px;
 line-height: 1.9;
-color: var(--text-color);
-text-decoration: none;
 }
 
 .projects-list a{
     text-decoration: none;
 }
 
-.container{
-    margin: 0 auto;
-    width: 1170px;   
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid tomato;
+.projects-img{
+    display: block;
 }
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+
+.card-lower{
+    width: 370px;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    border: 1px solid #EEEEEE;    
 }
