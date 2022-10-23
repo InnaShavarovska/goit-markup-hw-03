@@ -39,9 +39,13 @@ h1, h2, h3, p{
     padding-top: 0;
 }
 
+.no-margin {
+    margin-bottom: 0px;
+}
+
 .container {
     margin: 0 auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
@@ -65,6 +69,10 @@ h1, h2, h3, p{
 
 .header {
     border-bottom: 1px solid #ECECEC;
+}
+.header-main{
+    display: flex; 
+    justify-content: flex-start;  
 }
 
 /* Лого */
@@ -91,8 +99,14 @@ text-decoration: none;
 
 /* Nav */
 
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
 .list-nav{
 display: flex;
+padding-left: 93px;
 }
 
 .list-nav li{    
@@ -135,6 +149,8 @@ display: flex;
 }
 .list-contact{
     display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .list-contact li+li{
@@ -184,6 +200,13 @@ display: flex;
 
 /* Переваги студії */
 
+.advantages-main{
+    display: flex;
+}
+
+.advantages-main li+li{
+    margin-left: 30px;
+}
 
 .advantages-title{
 margin-bottom: 10px;
@@ -201,6 +224,17 @@ text-transform: uppercase;
 
 /* Чим ми займаємось *
 /* Наша команда */
+
+.work-main{
+    display: flex;   
+}
+.work-main li+li{
+    margin-left: 30px;
+}
+.work-img{
+    display: block;
+}
+
 
 .work-title,
 .team-title{
@@ -236,6 +270,10 @@ margin-bottom: 10px;
     margin-bottom: 30px;
 }
 
+.team-main{
+    display: flex;
+}
+
 
 /* Footer */
 .footer{
@@ -252,11 +290,10 @@ margin-bottom: 10px;
 
 
 .footer-link{
-display: inline-block;
-margin-bottom: 9px;
+    display: inline-block;
+    margin-bottom: 9px;
 
-color: rgba(255, 255, 255, 0.6);
-
+    color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
     text-decoration: none;
     font-style: normal;
@@ -270,14 +307,16 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--blue-color);
 }
 
-.no-margin{
-    margin-bottom: 0px;
-}
+
 
  /* Стилі портфоліо */
 
 /* Кнопки портфоліо */
 
+.filter {
+    display: flex;
+    justify-content: center;   
+}
 
 .projects-button{
     display: inline-block;
@@ -293,9 +332,15 @@ color: rgba(255, 255, 255, 0.6);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6; 
-     
+    line-height: 1.6;
+    margin-bottom: 50px;    
 }
+
+.filter li+li{
+    margin-left: 8px;
+}
+
+
 .projects-button:hover,
 .projects-button:focus{
     color: var(--white-color);
@@ -306,6 +351,9 @@ color: rgba(255, 255, 255, 0.6);
     padding-left: 25px;
     padding-right: 25px;
 }
+
+
+/* Портфоліо */
 
 .projects-title{
 margin-bottom: 4px;
