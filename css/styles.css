@@ -165,8 +165,9 @@ display: flex;
     padding-top: 200px;   
     padding-bottom: 200px;
 }
-.hero-title {
-    margin-bottom: 30px;
+.hero-title {    
+    margin: 0 auto;
+    width: 696px;
 
     color: var(--white-color);
     font-weight: 900;
@@ -176,7 +177,12 @@ display: flex;
     text-transform: uppercase;        
 }
 .hero-button {
-    padding: 10px 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
     border-radius: 4px;
     border: transparent;
     min-width: 216px;
